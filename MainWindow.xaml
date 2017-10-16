@@ -1,0 +1,26 @@
+﻿<Window x:Class="Password_directory.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Password_directory"
+        
+    mc:Ignorable="d"
+        Title="Passave - Authenticate" Height="673.684" Width="906.579" SnapsToDevicePixels="True" Icon="images\logo_dbms_png.png" WindowStyle="None" ResizeMode="NoResize" BorderThickness="5" WindowStartupLocation="CenterScreen" BorderBrush="#FF1A8BDA" Background="#FFD8D8D8">
+
+    <Grid Margin="0,0,8,8" Background="#FFD8D8D8">
+        <Label Content="assave" HorizontalAlignment="Left" Margin="368,45,0,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="86" Foreground="#FF878787"/>
+        <Image Source ="C:\Users\Adarsh\source\repos\Password_directory\Password_directory\images\logo_dbms_png.png" HorizontalAlignment="Left" Height="141" Margin="302,45,0,0" VerticalAlignment="Top" Width="87"/>
+        <Label Content="Welcome" HorizontalAlignment="Center" Margin="368,257,315,0" VerticalAlignment="Top" FontFamily="Calibri" FontSize="46" Foreground="#FF878787" HorizontalContentAlignment="Center" Width="206"/>
+        <TextBox Name ="username" HorizontalAlignment="Left" Padding ="5" Height="31" Margin="262,342,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="418" FontFamily="Calibri" FontSize="15"/>
+        <PasswordBox Name="password" PasswordChar="*" HorizontalAlignment="Left" Padding ="5" Height="30" Margin="262,390,0,0" VerticalAlignment="Top" Width="418" FontFamily="Calibri" FontSize="15"/>
+        <Button Content="SignIn" HorizontalAlignment="Left" Height="44" Margin="436,469,0,0" VerticalAlignment="Top" Width="71" FontFamily="Calibri" FontSize="23" BorderBrush="White" BorderThickness="0" Background="White" Foreground="#FF878787" Click="Button_Click"/>
+        <Image Source ="C:\Users\Adarsh\source\repos\Password_directory\Password_directory\images\pass-icon.png" HorizontalAlignment="Left" Height="30" Margin="227,390,0,0" VerticalAlignment="Top" Width="30"/>
+        <Image Source="C:\Users\Adarsh\source\repos\Password_directory\Password_directory\images\icon-user.png" HorizontalAlignment="Left" Height="30" Margin="227,342,0,0" VerticalAlignment="Top" Width="30"/>
+        <Label Content="X" HorizontalAlignment="Left" Margin="0,-13,0,613" VerticalAlignment="Bottom" FontSize="48" FontFamily="Calibri" Foreground="#FF878787" MouseDown="CloseApp" Height="56"/>
+        <Label Name ="ErrorMsg" Content="Please check the Username or Password" HorizontalAlignment="Left" Margin="314,306,0,0" VerticalAlignment="Top" Foreground="#FFF30000" FontFamily="Calibri" FontSize="17" Visibility="Hidden"/>
+        <Image HorizontalAlignment="Left" Height="55" Margin="834,10,0,0" VerticalAlignment="Top" Width="55" Source="images/admin-icon.png" MouseDown="GotoConfig"/>
+
+
+    </Grid>
+</Window>
